@@ -1,0 +1,172 @@
+
+
+body {
+ padding-top:0px;
+ align: center;
+}
+
+#masthead { 
+	z-index: 1000;
+	width: 100%;
+	position: fixed;
+	left:250px;
+	top:0px;
+	height: 150px;
+	padding: 0;
+	margin-left: 0px;
+	margin-top: 0px;
+	background: url(../images/logo.jpg) no-repeat;
+	background-size: contain;
+}
+
+#masthead h1 {
+ font-size: 30px;
+ line-height: 1;
+ padding-top:40px;
+ padding-left:10px;
+}
+
+#masthead .well {
+ margin-top:8%;
+}
+
+@media screen and (min-width: 768px) {
+  #masthead h1 {
+    font-size: 50px;
+  }
+}
+
+.navbar-bright {
+ background-color:#111155;
+ color:#fff;
+}
+
+.affix-top,.affix{
+ position: static;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+  	margin-top:30px;
+  	width:228px;
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+}
+
+#sidebar li.active {
+  border:0 #eee solid;
+  border-right-width:5px;
+}
+
+#gw_logo {
+	height: 150px;
+	width: 250px;
+	background: url(../images/gw_logo.png) no-repeat;
+	background-size: 240px;
+	background-position: center top;
+	margin-top:20px;
+	margin-bottom: 20px;
+	padding: 5px;
+	
+}
+
+#sidebar {
+  z-index: 1000;
+  position: fixed;
+  left: 150px;
+  width: 250px;
+  height: 100%;
+  margin-left: -150px;
+  margin-right: 0;
+  padding: 0;
+  overflow-y: auto;
+  background: #EEE;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#sidebar header {
+  background-color: #263238;
+  font-size: 20px;
+  line-height: 52px;
+  text-align: center;
+}
+
+#sidebar header a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+#sidebar li.selected {
+	padding-left: 7px;
+	background: #f4f4f4;
+}
+
+#sidebar li.selected:hover {
+	padding-left: 7px;
+	background: #ECEFF1;
+}
+#sidebar header a:hover {
+  color: #fff;
+  padding-left: 7px;
+}
+
+#sidebar .nav{
+  
+}
+
+#sidebar .nav a{
+  background: none;
+  border-bottom: 1px solid #455A64;
+  color: #CFD8DC;
+  font-size: 14px;
+  padding: 16px 24px;
+}
+
+#sidebar .nav a:hover{
+  background: none;
+  padding-left: 7px;
+  color: #ECEFF1;
+}
+
+#sidebar .nav a i{
+  margin-right: 16px;
+}
+
+#content {
+	background: #f4f4f4;
+	margin:0;
+	padding:10px;
+	width: 100%;
+}
+#leftCol {
+	margin-top: 0px;
+	
+}
+#copyright {
+	position:fixed;
+	bottom: 0;
+	left: 30px;
+	text-align: center;
+}
+
+#content_text {
+	position:relative;
+	padding-left:260px;
+	padding-top:150px;
+	min-height: 100%;
+	max-width:79%;
+}
+
+#content_text p {
+	font-size: 120%;
+}
+

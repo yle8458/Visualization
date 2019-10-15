@@ -1,74 +1,66 @@
 <html>
 <head>
 	<script src="https://www.gstatic.com/charts/loader.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<script src="js/military.js"></script>
 	<title>Visualization Individual Project</title>
 </head>
 
 <body>
-	<div id="main">
-		<div id="header">
-			<div id="logo">
-				<div id="logo_text">
-					<h1><a href="index.html">
-							Individual <span class="logo_color"> | Project</span>
-					    </a></h1>
-					<h2>Analysis of Education, Healthcare and Military Expense of G-20 Countries</h2>
-				</div><!-- logo_text -->
-			</div><!-- logo -->
-			<div id="menubar">
-				<ul id="menu">
+	<!--main-->
+	<div class="container-fluid">
+		<div class="row">
+			<!--left-->
+			<div class="col-md-2" id="leftCol">
+				<ul class="nav nav-stacked" id="sidebar">
+					<li id="gw_logo"></li>
 					<li><a href="index.html">Overview</a></li>
 					<li><a href="education.html">Education</a></li>
 					<li><a href="healthcare.html">Healthcare</a></li>
-					<li class="selected"><a href="military.html">Military</a></li>			
-				</ul><!-- menu -->
-			</div><!-- menubar -->
-		</div><!-- header -->
-		
-		<div id="site_content">
-			<div id="content">
-				<h1>Military Spending Analysis for Countries in G-20</h1>
-				<h3>Total Military Expense in US Dollar ($)</h3>
-				<div id="military_expense_div" style="width: 830px; height: 500px;">	
-				</div>
-				<p></p>
-				<h3>Comparision of Military Expense with GDP</h3>
-				<div id="gdp_div" style="width: 830px; height: 500px;"></div>
-				<p></p>
-				<div id="Military_Over_GDP_div" style="width: 830px; height: 500px;"></div>
-				<p></p>
-				<div id="shared_military_div" style="width: 830px; height: 500px;"></div>
-				<p></p>
-				<h3>Comparision of Military Expense Per Capita with GDP Per Capita</h3>
-				<div id="military_expense_pcap_div" style="width: 830px; height: 500px;"></div>
-				<p></p>
-				<div id="gdp_pcap_div" style="width: 830px; height: 500px;"></div>
-				<p></p>
-				<div id="Military_Over_GDP_PCAP_div" style="width: 830px; height: 500px;"></div>
-				<p></p>
-				<div id="shared_military_pcap_div" style="width: 830px; height: 500px;"></div>
-				<p></p>
-				
-		
-			</div><!-- content -->
+					<li class="selected"><a href="military.html">Military</a></li>
+					<li id="copyright"><p>Copyright &copy; 
+						<script>
+							var d = new Date();
+							document.write(d.getFullYear());
+						</script> 
+						By <a href='mailto:ppzt@gwmail.gwu.edu'>Yuan Le</a>
+						</p>
+					</li>
+				</ul>
+			</div><!--/left-->
+      
+			<!--right-->
 			
-		</div><!-- site_content -->
-		
-		
-		
-		<div id="content_footer">
-			<div id="footer">
-				Copyright &copy; 
-				<script>
-					var d = new Date();
-					document.write(d.getFullYear());
-				</script> 
+			<div class="col-md-10" id="content">
+				<div id="masthead">  
+					<h1>Military Spending Analysis</h1>
+					
+				</div><!--/masthead-->
 				
-				| HTML5 | CSS3 | By YL
-			</div><!-- footer -->
-		</div><!-- content_footer -->
-	</div><!-- main -->
+				<div id="content_text">
+					<h3>Total Military Expense in US Dollar ($)</h3>
+					<div id="military_expense_div" style="width: 880px; height: 500px;">	
+					</div>
+					<p></p>
+					<h3>Comparision of Military Expense with GDP</h3>
+					<div id="gdp_div" style="width: 880px; height: 500px;"></div>
+					<p></p>
+					<div id="Military_Over_GDP_div" style="width: 880px; height: 500px;"></div>
+					<p></p>
+					<div id="shared_military_div" style="width: 880px; height: 500px;"></div>
+					<p></p>
+					<h3>Comparision of Military Expense Per Capita with GDP Per Capita</h3>
+					<div id="military_expense_pcap_div" style="width: 880px; height: 500px;"></div>
+					<p></p>
+					<div id="gdp_pcap_div" style="width: 880px; height: 500px;"></div>
+					<p></p>
+					<div id="Military_Over_GDP_PCAP_div" style="width: 880px; height: 500px;"></div>
+					<p></p>
+					<div id="shared_military_pcap_div" style="width: 880px; height: 500px;"></div>
+					<p></p>
+				</div>
+			</div><!--right-->
+		</div><!--row-->
+	</div><!--main-->
 </body>
-</html>
