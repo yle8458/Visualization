@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>Visualization Individual Project</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+	<div id="main">
+		<div id="header">
+			<div id="logo">
+				<div id="logo_text">
+					<h1><a href="index.html">
+							Individual <span class="logo_color"> | Project</span>
+					    </a></h1>
+					<h2>Analysis of Education, Healthcare and Military Expense of G-20 Countries</h2>
+				</div><!-- logo_text -->
+			</div><!-- logo -->
+			<div id="menubar">
+				<ul id="menu">
+					<li class="selected"><a href="index.html">Overview</a></li>
+					<li><a href="education.html">Education</a></li>
+					<li><a href="healthcare.html">Healthcare</a></li>
+					<li><a href="military.html">Military</a></li>			
+				</ul><!-- menu -->
+			</div><!-- menubar -->
+		</div><!-- header -->
+		
+		<div id="site_content">
+			<div class="sidebar">
+				<h3>Designed by:</h3>
+				<h4>Yuan Le</h4>
+				<h5>ppzt@gwmail.gwu.edu</h5>
+				
+			</div><!-- sidebar -->
+			<div id="content">
+				<h2>Project Description</h2>
+				<p>This is an individual project analyzing the expense of 
+					Education, Healthcare and Military for 10 G-20 countries.
+				</p>
+				
+				<h2>Overview</h2>
+				<p>
+					In this project, I first selected all the 20 countries from G-20 including European Union. The data is obtained 
+					from the <a target='_blank' href='https://data.worldbank.org/'>World Bank Open Data</a>. Unforturnately, 
+					the education expense data of many countries is missing, some of the those are very top countries, 
+					such as USA, Russia and China. Hence, I focus on those countries who has more than 6 years of education expense 
+					data between 2010 to 2016. 
+				</p>
+				<br />
+				<p>
+					The data are obtained from the World Bank Open Data, and I queried the data by countries' name. After clean
+					and process the data using a Python script, I uploaded the cleaned data to google sheet, and then use Google Chart 
+					API to generate the charts.
+				</p>
+				<h2>Data Table</h2>
+				<p>
+					The Cleaned data can be accessed from <a href="https://docs.google.com/spreadsheets/d/1Njt710r2976erWl68O3qwNUa0NRmqBBPDydE_QkWGFo/edit?usp=sharing" target="_blank" >here</a>
+				</p>
+				<h2>Special Note</h2>
+				<p>Due to time constraint, I adopted the html design and layout from the class materials.</p>
+				
+			</div><!-- content -->
+		</div><!-- site_content -->
+		
+		
+		<div id="content_footer">
+			<div id="footer">
+				Copyright &copy; 
+				<script>
+					var d = new Date();
+					document.write(d.getFullYear());
+				</script> 
+				
+				| HTML5 | CSS3 | By YL
+			</div><!-- footer -->
+		</div><!-- content_footer -->
+	</div><!-- main -->
+</body>
+</html>
