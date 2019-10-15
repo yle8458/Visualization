@@ -216,7 +216,7 @@
 			var chart_name = div_name.substring(0, div_name.length-3).split('_').join(' ');
 			console.log(chart_name);
 			var options = { legend: { position: 'top' },
-							diff: { newData: { widthFactor: 0.8, tooltip : {prefix : new_name} },
+							diff: { newData: { widthFactor: 0.6, tooltip : {prefix : new_name} },
 									oldData: { opacity: 1, color: 'yellow', tooltip: {prefix: old_name}}},
 							height: 400,
 							vAxis: {title: chart_name},
